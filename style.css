@@ -18,6 +18,16 @@ body {
     font-family: Arial;
 }  
 
+div {
+    color: white;
+    font-family:Arial;
+    font-size:30px;
+}
+a {
+    color: white;
+    font-family:Arial;
+    font-size:30px;
+}
 h1 {
     color: white;
     font-family:Arial;
