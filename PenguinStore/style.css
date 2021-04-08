@@ -1,6 +1,10 @@
+body {
+    background-color: black;
+}
+
 .topnavbar {
     width: 100%;
-    background-color:white;
+    background-color:black;
     overflow: hidden;
 }
   
@@ -13,9 +17,33 @@
     font-family: Arial;
 }
 
+div {
+    color: white;
+    font-family:Arial;
+    font-size:20px;
+}
+a {
+    color: white;
+    font-family:Arial;
+    font-size:20px;
+}
 h1 {
+    color: white;
+    font-family:Arial;
     font-size:25px;
 }
+  
+p {
+    color: white;
+    font-size: 20px;
+    font-family: Arial;
+}
+b {
+    color: white;
+    font-size: 15px;
+    font-family:Arial;
+}
+
 .Button {
     background-color:#0C888A;
     border-radius:8px;
