@@ -22,11 +22,13 @@ div {
     font-family:Arial;
     font-size:20px;
 }
+
 a {
     color: white;
     font-family:Arial;
     font-size:20px;
 }
+
 h1 {
     color: white;
     font-family:Arial;
@@ -38,10 +40,11 @@ p {
     font-size: 20px;
     font-family: Arial;
 }
+
 b {
     color: white;
-    font-size: 15px;
     font-family:Arial;
+    font-size:25px;
 }
 
 .Button {
@@ -55,7 +58,7 @@ b {
     font-weight:bold;
     padding:15px 15px;
     text-decoration:none;
-  }
+}
 .Button:hover {
     background-color:#4795A1;
 }
