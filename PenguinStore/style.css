@@ -66,3 +66,12 @@ b {
     position:relative;
     top:1px;
 }
+
+.container {
+    display: flex;
+    align-items: center;
+}
+  
+img {
+    max-width: 100%
+}
