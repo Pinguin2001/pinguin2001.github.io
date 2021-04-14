@@ -1,13 +1,50 @@
 body {
     background-color: black;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 .topnavbar {
     width: 100%;
-    background-color:rgb(54, 54, 54);
+    background-color:black;
     overflow: hidden;
 }
-  
+
+.topnav {
+  overflow: hidden;
+  background-color: black;
+  position: relative;
+}
+
+.topnav #myLinks {
+  display: none;
+}
+
+.topnav a {
+  color: white;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  display: block;
+}
+
+.topnav a.icon {
+  background: black;
+  display: block;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.topnav a:hover {
+  background-color: #4795A1;
+  color: black;
+}
+
+.active {
+  background-color: black;
+  color: white;
+}
+
 .topnavbar a {
     float: left;
     color: #f2f2f2;
@@ -23,27 +60,31 @@ div {
     font-family:Arial;
     font-size:20px;
 }
+
 a {
     color: white;
     font-family:Arial;
     font-size:20px;
 }
+
 h1 {
     color: white;
     font-family:Arial;
     font-size:30px;
 }
-  
+
 p {
     color: white;
     font-size: 20px;
     font-family: Arial;
 }
+
 b {
     color: white;
     font-size: 15px;
     font-family:Arial;
 }
+
 .Button {
     background-color:#0C888A;
     border-radius:8px;
@@ -55,7 +96,7 @@ b {
     font-weight:bold;
     padding:15px 15px;
     text-decoration:none;
-  }
+}
 .Button:hover {
     background-color:#4795A1;
 }

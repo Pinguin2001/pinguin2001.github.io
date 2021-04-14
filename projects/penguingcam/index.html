@@ -3,12 +3,21 @@
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>Pinguin2001s Website</title>
 <link rel="stylesheet" href="../../style.css">
-<div class="topnavbar">
-  <a href="../../index.html">Home</a>
-  <a href="../../projects/penguingcam/index.html">PenguinGCam</a>
-  <a href="../../projects/penguinbrowser/index.html">PenguinBrowser</a>
-  <a href="../../projects/assetsinjector/index.html">Assets Injector</a>
-  <a href="../../about.html">About</a>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+<div class="topnav">
+  <a href="../../index.html" class="active">Home</a>
+  <div id="myLinks">
+    <a href="../penguingcam/index.html">PenguinGCam</a>
+    <a href="../penguinbrowser/index.html">PenguinBrowser</a>
+    <a href="../penguinstore/index.html">PenguinStore</a>
+    <a href="../assetsinjector/index.html">Assets Injector</a>
+    <a href="../../about.html">About</a>
+  </div>
+  <a href="javascript:void(0);" class="icon" onclick="showMenu()">
+    <i class="fa fa-bars"></i>
+  </a>
 </div>
 <img src="header.png" widht="600" height="200">
 <p>PenguinGCam is a modded GCam by Pinguin2001</p>
@@ -48,4 +57,15 @@
 	- Most Samsung Devices running Android 8+<br>
 </p>
 <p>Copyright &copy 2020-2021 Pinguin2001</p>
+</body>
 </html>
+<script>
+  function showMenu() {
+    var x = document.getElementById("myLinks");
+    if (x.style.display === "block") {
+      x.style.display = "none";
+    } else {
+      x.style.display = "block";
+    }
+  }
+</script>

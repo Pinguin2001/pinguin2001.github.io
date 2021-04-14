@@ -1,22 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
-<meta name="viewport" content="width=device-width, initial-scale=1" /> 
-<title>Pinguin2001s Website</title>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
 <link rel="stylesheet" href="style.css">
-<div class="topnavbar">
-  <a href="index.html">Home</a>
-  <a href="projects/penguingcam/index.html">PenguinGCam</a>
-  <a href="projects/penguinbrowser/index.html">PenguinBrowser</a>
-  <a href="projects/assetsinjector/index.html">Assets Injector</a>
-  <a href="about.html">About</a>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+<div class="topnav">
+  <a href="index.html" class="active">Home</a>
+  <div id="myLinks">
+    <a href="projects/penguingcam/index.html">PenguinGCam</a>
+    <a href="projects/penguinbrowser/index.html">PenguinBrowser</a>
+    <a href="projects/penguinstore/index.html">PenguinStore</a>
+    <a href="projects/assetsinjector/index.html">Assets Injector</a>
+    <a href="about.html">About</a>
+  </div>
+  <a href="javascript:void(0);" class="icon" onclick="showMenu()">
+    <i class="fa fa-bars"></i>
+  </a>
 </div>
+<center>
+<br>
 <h1>About me</h1>
-<p>Hello, Im Pinguin2001 and im a junior developer.</p>
-<p>If you want to contact me, you can contact me on Telegram</p>
-<a href="https://t.me/pinguin2001" class="Button">Contact me on Telegram</a>
-<p>PenguinGCam Links:</p>
-<a href="https://t.me/penguingcamchat" class="Button">Support Group</a>
+<p>Hello, im Pinguin2001 and im a developer.</p>
+<p>My Socials</p>
+<a href="https://t.me/pinguin2001" class="Button">Telegram</a>
+<a href="https://bit.ly/JuliansInsta" class="Button">Instagram</a>
+<br>
+<p>General PenguinApps Links:</p>
 <a href="https://t.me/penguingcam" class="Button">NewsLetter</a>
-<p>In PenguinGCam NewsLetter you get always Information about PenguinGCam before anyone else</p>
+<a href="https://t.me/penguingcamchat" class="Button">Support Group</a>
+<br>
+<p>PenguinStore Links:</p>
+<a href="https://t.me/PenguinStoreNotifications">PenguinStore Notifications</a>
+<p>Other Channels:</p>
+<a href="https://t.me/pinguin2001channel">Pinguin2001s Channel</a>
+<br>
 <p>Copyright &copy 2020-2021 Pinguin2001</p>
+</center>
+</body>
 </html>
+<script>
+  function showMenu() {
+    var x = document.getElementById("myLinks");
+    if (x.style.display === "block") {
+      x.style.display = "none";
+    } else {
+      x.style.display = "block";
+    }
+  }
+</script>

@@ -1,0 +1,88 @@
+body {
+    background-color: black;
+}
+
+.topnavbar {
+    width: 100%;
+    background-color:black;
+    overflow: hidden;
+}
+  
+.topnavbar a {
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 10px 12px;
+    text-decoration: none;
+    font-size: 20px;
+    font-family: Arial;
+}  
+div {
+    color: white;
+    font-family:Arial;
+    font-size:20px;
+}
+
+a {
+    color: white;
+    font-family:Arial;
+    font-size:20px;
+}
+
+h1 {
+    color: white;
+    font-family:Arial;
+    font-size:25px;
+}
+  
+p {
+    color: white;
+    font-size: 20px;
+    font-family: Arial;
+}
+
+b {
+    color: white;
+    font-family:Arial;
+    font-size:25px;
+}
+
+button {
+    background-color:#0C888A;
+    border-radius:8px;
+    cursor:pointer;
+    color:#ffffff;
+    font-family:Arial;
+    font-size:20px;
+    font-weight:bold;
+    padding:15px 15px;
+}
+
+.Button {
+    background-color:#0C888A;
+    border-radius:8px;
+    display:inline-block;
+    cursor:pointer;
+    color:#ffffff;
+    font-family:Arial;
+    font-size:20px;
+    font-weight:bold;
+    padding:15px 15px;
+    text-decoration:none;
+}
+.Button:hover {
+    background-color:#4795A1;
+}
+.Button:active {
+    position:relative;
+    top:1px;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+}
+  
+img {
+    max-width: 100%
+}

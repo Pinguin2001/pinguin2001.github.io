@@ -1,24 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
+<head>
 <meta name="viewport" content="width=device-width, initial-scale=1" /> 
-<title>Pinguin2001s Website</title>
 <link rel="stylesheet" href="style.css">
-<div class="topnavbar">
-  <a href="index.html">Home</a>
-  <a href="projects/penguingcam/index.html">PenguinGCam</a>
-  <a href="projects/penguinbrowser/index.html">PenguinBrowser</a>
-  <a href="projects/assetsinjector/index.html">Assets Injector</a>
-  <a href="about.html">About</a>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+<div class="topnav">
+  <a href="index.html" class="active">Home</a>
+  <div id="myLinks">
+    <a href="projects/penguingcam/index.html">PenguinGCam</a>
+    <a href="projects/penguinbrowser/index.html">PenguinBrowser</a>
+    <a href="projects/penguinstore/index.html">PenguinStore</a>
+    <a href="projects/assetsinjector/index.html">Assets Injector</a>
+    <a href="about.html">About</a>
+  </div>
+  <a href="javascript:void(0);" class="icon" onclick="showMenu()">
+    <i class="fa fa-bars"></i>
+  </a>
 </div>
 <center>
 <br>
 <img src="logo.jpg" width="320" height="320">
 <h1>Pinguin2001s Website</h1>
 <p>My current projects are:<br>
-	- PenguinGCam<br>
-	- PenguinBrowser<br>
-	- Assets Injector<br>
+  - PenguinGCam<br>
+  - PenguinBrowser<br>
+  - PenguinStore<br>
+  - Assets Injector<br>
 </p>
 <p>Copyright &copy 2020-2021 Pinguin2001</p>
 </center>
+</body>
 </html>
+<script>
+  function showMenu() {
+    var x = document.getElementById("myLinks");
+    if (x.style.display === "block") {
+      x.style.display = "none";
+    } else {
+      x.style.display = "block";}
+  }
+</script>
