@@ -3,6 +3,8 @@ body {
 }
 
 .topnavbar {
+    position: sticky;
+    top: 0;
     width: 100%;
     background-color:black;
     overflow: hidden;
@@ -10,7 +12,6 @@ body {
   
 .topnavbar a {
     float: left;
-    color: #f2f2f2;
     text-align: center;
     padding: 10px 12px;
     text-decoration: none;
@@ -48,14 +49,12 @@ b {
 }
 
 button {
-    background-color:#0C888A;
+    background-color:black;
     border-radius:8px;
     cursor:pointer;
     color:#ffffff;
-    font-family:Arial;
-    font-size:20px;
-    font-weight:bold;
     padding:15px 15px;
+    border: none;
 }
 
 .Button {
