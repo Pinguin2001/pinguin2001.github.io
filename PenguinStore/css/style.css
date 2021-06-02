@@ -1,10 +1,24 @@
 body {
     background-color: black;
-    padding: 1rem;
+}
+
+.topnavbar {
+    position: sticky;
+    top: 0;
+    width: 100%;
+    background-color:black;
+    overflow: hidden;
 }
   
+.topnavbar a {
+    float: left;
+    text-align: center;
+    padding: 10px 12px;
+    text-decoration: none;
+    font-size: 20px;
+    font-family: Arial;
+}  
 div {
-    
     color: white;
     font-family:Arial;
     font-size:20px;
@@ -15,6 +29,7 @@ a {
     font-family:Arial;
     font-size:20px;
 }
+
 h1 {
     color: white;
     font-family:Arial;
@@ -22,7 +37,6 @@ h1 {
 }
   
 p {
-    text-align: center;
     color: white;
     font-size: 20px;
     font-family: Arial;
@@ -32,6 +46,15 @@ b {
     color: white;
     font-family:Arial;
     font-size:25px;
+}
+
+button {
+    background-color:black;
+    border-radius:5px;
+    cursor:pointer;
+    color:#ffffff;
+    padding:15px 15px;
+    border: none;
 }
 
 .Button {
@@ -53,32 +76,12 @@ b {
     position:relative;
     top:1px;
 }
+
+.container {
+    display: flex;
+    align-items: center;
+}
   
 img {
     max-width: 100%
-}
-
-.app {
-  padding: 1rem;
-  height: 4rem;
-}
-
-.grid {
-  max-width: 1200px;
-  margin: auto;
-  display: grid;
-  grid-gap: 5rem;
-  text-align: center;
-}
-
-@media (min-width: 200px) {
-  .grid { grid-template-columns: repeat(2, 1fr); }
-}
-
-@media (min-width: 900px) {
-  .grid { grid-template-columns: repeat(3, 1fr); }
-}
-
-@media (min-width: 1100px) {
-  .grid { grid-template-columns: repeat(4, 1fr); }
 }
