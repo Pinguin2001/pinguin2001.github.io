@@ -71,7 +71,7 @@ img {
   text-align: center;
 }
 
-@media (min-width: 500px) {
+@media (min-width: 200px) {
   .grid { grid-template-columns: repeat(2, 1fr); }
 }
 
