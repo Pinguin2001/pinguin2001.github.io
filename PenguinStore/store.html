@@ -1,111 +1,114 @@
 <!DOCTYPE html>
 <html lang="en">
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1" />
-<link rel="stylesheet" href="css/style.css">
-<b>Blogs</b>
-<div class="container">
-  <div class="image">
-    <img src="app/W10MBlog/appicon.png" width="135" height="135">
-  </div>
-  <div>
-    <p>W10M Blog</p>
-    <a href="app/W10MBlog/index.html" class="Button">Open</a>
-  </div>
-</div>
-<b>Emulators</b>
-<div class="container">
-  <div class="image">
-    <img src="app/RetroArch/appicon.png" width="135" height="135">
-  </div>
-  <div>
-    <p>RetroArch</p>
-    <a href="app/RetroArch/index.html" class="Button">Open</a>
-  </div>
-</div>
-<div class="container">
-  <div class="image">
-    <img src="app/RetriXGold/appicon.png" width="135" height="135">
-  </div>
-  <div>
-    <p>RetriX Gold</p>
-    <a href="app/RetriXGold/index.html" class="Button">Open</a>
-  </div>
-</div>
-<b>Extentions</b>
-<div class="container">
-  <div class="image">
-    <img src="app/CopyToClipboard/appicon.png" width="135" height="135">
-  </div>
-  <div>
-    <p>Copy to Clipboard</p>
-    <a href="app/CopyToClipboard/index.html" class="Button">Open</a>
-  </div>
-</div>
-<b>Maps</b>
-<div class="container">
-  <div class="image">
-    <img src="app/OpenStreetMap/appicon.png" width="135" height="135">
-  </div>
-  <div>
-    <p>OpenStreetMap</p>
-    <a href="app/OpenStreetMap/index.html" class="Button">Open</a>
-  </div>
-</div>
-<b>Social</b>
-<div class="container">
-  <div class="image">
-    <img src="app/ImgurUWP/appicon.png" width="135" height="135">
-  </div>
-  <div>
-    <p>Imgur (Unoffical)</p>
-    <a href="app/ImgurUWP/index.html" class="Button">Open</a>
-  </div>
-</div>
-<div class="container">
-  <div class="image">
-    <img src="app/Unicord/appicon.png" width="135" height="135">
-  </div>
-  <div>
-    <p>Unicord</p>
-    <a href="app/Unicord/index.html" class="Button">Open</a>
-  </div>
-</div>
-<div class="container">
-  <div class="image">
-    <img src="app/UnigramMobile/appicon.png" width="135" height="135">
-  </div>
-  <div>
-    <p>Unigram Mobile</p>
-    <a href="app/UnigramMobile/index.html" class="Button">Open</a>
-  </div>
-</div>
-<b>Tools</b>
-<div class="container">
-  <div class="image">
-    <img src="app/InteropTools/appicon.png" width="135" height="135">
-  </div>
-  <div>
-    <p>Interop Tools</p>
-    <a href="app/InteropTools/index.html" class="Button">Open</a>
-  </div>
-</div>
-<div class="container">
-  <div class="image">
-    <img src="app/RunBox/appicon.png" width="135" height="135">
-  </div>
-  <div>
-    <p>Run</p>
-    <a href="app/RunBox/index.html" class="Button">Open</a>
-  </div>
-</div>
-<div class="container">
-  <div class="image">
-    <img src="app/W10MGroup/appicon.png" width="135" height="135">
-  </div>
-  <div>
-    <p>W10M Group</p>
-    <a href="app/W10MGroup/index.html" class="Button">Open</a>
-  </div>
-</div>
+<meta name="viewport" content="width=device-width, initial-scale=1" /> 
+<link rel="stylesheet" href="style.css">
+<img src="img/storeicon.png" width="125" height="125">
+<div class="lds-roller"><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div>
 </html>
+<style>
+body {
+    background-color: black;
+}
+img {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  width: 90px;
+  height: 90px;
+  margin: auto;
+}
+
+.lds-roller {
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  width: 80px;
+  height: 80px;
+  margin: auto;
+}
+.lds-roller div {
+  animation: lds-roller 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
+  transform-origin: 40px 40px;
+}
+.lds-roller div:after {
+  content: " ";
+  display: block;
+  position: absolute;
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: #fff;
+  margin: -5px 0 0 -5px;
+}
+.lds-roller div:nth-child(1) {
+  animation-delay: -0.036s;
+}
+.lds-roller div:nth-child(1):after {
+  top: 63px;
+  left: 63px;
+}
+.lds-roller div:nth-child(2) {
+  animation-delay: -0.072s;
+}
+.lds-roller div:nth-child(2):after {
+  top: 68px;
+  left: 56px;
+}
+.lds-roller div:nth-child(3) {
+  animation-delay: -0.108s;
+}
+.lds-roller div:nth-child(3):after {
+  top: 71px;
+  left: 48px;
+}
+.lds-roller div:nth-child(4) {
+  animation-delay: -0.144s;
+}
+.lds-roller div:nth-child(4):after {
+  top: 72px;
+  left: 40px;
+}
+.lds-roller div:nth-child(5) {
+  animation-delay: -0.18s;
+}
+.lds-roller div:nth-child(5):after {
+  top: 71px;
+  left: 32px;
+}
+.lds-roller div:nth-child(6) {
+  animation-delay: -0.216s;
+}
+.lds-roller div:nth-child(6):after {
+  top: 68px;
+  left: 24px;
+}
+.lds-roller div:nth-child(7) {
+  animation-delay: -0.252s;
+}
+.lds-roller div:nth-child(7):after {
+  top: 63px;
+  left: 17px;
+}
+.lds-roller div:nth-child(8) {
+  animation-delay: -0.288s;
+}
+.lds-roller div:nth-child(8):after {
+  top: 56px;
+  left: 12px;
+}
+@keyframes lds-roller {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+</style>
+<script>
+setTimeout(function(){
+  window.location.href = 'allapps.html';
+}, 1500);
+</script>

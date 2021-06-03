@@ -1,23 +1,6 @@
 body {
     background-color: black;
-}
-
-.topnavbar {
-    position: sticky;
-    top: 0;
-    width: 100%;
-    background-color:black;
-    overflow: hidden;
-}
-  
-.topnavbar a {
-    float: left;
-    text-align: center;
-    padding: 10px 12px;
-    text-decoration: none;
-    font-size: 20px;
-    font-family: Arial;
-}  
+} 
 div {
     color: white;
     font-family:Arial;
@@ -40,21 +23,6 @@ p {
     color: white;
     font-size: 20px;
     font-family: Arial;
-}
-
-b {
-    color: white;
-    font-family:Arial;
-    font-size:25px;
-}
-
-button {
-    background-color:black;
-    border-radius:5px;
-    cursor:pointer;
-    color:#ffffff;
-    padding:15px 15px;
-    border: none;
 }
 
 .Button {
@@ -80,8 +48,4 @@ button {
 .container {
     display: flex;
     align-items: center;
-}
-  
-img {
-    max-width: 100%
 }
