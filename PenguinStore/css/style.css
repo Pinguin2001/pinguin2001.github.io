@@ -38,11 +38,7 @@ p {
     text-decoration:none;
 }
 .Button:hover {
-    background-color:#4795A1;
-}
-.Button:active {
-    position:relative;
-    top:1px;
+    background-color:#4fa5b3;
 }
 
 .container {
