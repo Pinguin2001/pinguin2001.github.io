@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link rel="stylesheet" href="css/style.css">
+<h1>Featured</h1>
+<div class="slideshow-container">
+
+<div class="featured slide">
+  <a href="app/InteropTools/index.html"><img src="slides/interoptools.png" style="width:100%"></a>
+  <div class="text">Interop Tools</div>
+</div>
+
+<div class="featured slide">
+  <a href="app/RetriXGold/index.html"><img src="slides/retrixgold.png" style="width:100%"></a>
+  <div class="text">RetriX Gold</div>
+</div>
+
+<div class="featured slide">
+  <a href="app/OpenStreetMap/index.html"><img src="slides/osm.png" style="width:100%"></a>
+  <div class="text">OSM (Unoffical)</div>
+</div>
+
+<div class="featured slide">
+  <a href="app/RunBox/index.html"><img src="slides/run.png" style="width:100%"></a>
+  <div class="text">Run</div>
+</div>
+
+</div>
+
+<div style="text-align:center">
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+</div>
+
+<h1><img src="img/blog.png"/>Blogs</h1>
+<div class="container">
+  <a href="app/W10MBlog/index.html"><img src="app/W10MBlog/appicon.png" width="125" height="125"></a>
+  <p>W10MBlog</p>
+</div>
+<h1><img src="img/emulators.png"/>Emulators</h1>
+<div class="container">
+  <a href="app/RetriXGold/index.html"><img src="app/RetriXGold/appicon.png" width="125" height="125"></a>
+  <p>RetriXGold</p>
+</div>
+<div class="container">
+  <a href="app/RetroArch/index.html"><img src="app/RetroArch/appicon.png" width="125" height="125"></a>
+  <p>RetroArch</p>
+</div>
+<h1><img src="img/extentions.png" />Extentions</h1>
+<div class="container">
+  <a href="app/CopyToClipboard/index.html"><img src="app/CopyToClipboard/appicon.png" width="125" height="125"></a>
+  <p>Copy to Clipboard</p>
+</div>
+<div class="container">
+  <a href="app/ZellaSoftWifiConnect/index.html"><img src="app/ZellaSoftWifiConnect/appicon.png" width="125" height="125"></a>
+  <p>ZellaSoft Wifi Connect</p>
+</div>
+<h1><img src="img/maps.png" />Maps</h1>
+<div class="container">
+  <a href="app/OpenStreetMap/index.html"><img src="app/OpenStreetMap/appicon.png" width="125" height="125"></a>
+  <p>OSM (Unoffical)</p>
+</div>
+<h1><img src="img/social.png" />Social</h1>
+<div class="container">
+  <a href="app/ImgurUWP/index.html"><img src="app/ImgurUWP/appicon.png" width="125" height="125"></a>
+  <p>Imgur (Unoffical)</p>
+</div>
+<div class="container">
+  <a href="app/Unicord/index.html"><img src="app/Unicord/appicon.png" width="125" height="125"></a>
+  <p>Unicord</p>
+</div>
+<div class="container">
+  <a href="app/UnigramMobile/index.html"><img src="app/UnigramMobile/appicon.png" width="125" height="125"></a>
+  <p>Unigram Mobile</p>
+</div>
+<h1><img src="img/tools.png" />Tools</h1>
+<div class="container">
+  <a href="app/InteropTools/index.html"><img src="app/InteropTools/appicon.png" width="125" height="125"></a>
+  <p>InteropTools</p>
+</div>
+<div class="container">
+  <a href="app/RunBox/index.html"><img src="app/RunBox/appicon.png" width="125" height="125"></a>
+  <p>Run</p>
+</div>
+<div class="container">
+  <a href="app/W8.1MGroup/index.html"><img src="app/W8.1MGroup/appicon.png" width="125" height="125"></a>
+  <p>W8.1M Group</p>
+</div>
+<div class="container">
+  <a href="app/W10MGroup/index.html"><img src="app/W10MGroup/appicon.png" width="125" height="125"></a>
+  <p>W10M Group</p>
+</div>
+</html> 
+<style>
+* {box-sizing: border-box;}
+body {
+  font-family: Verdana, sans-serif;
+}
+.featured {
+  display: none;
+}
+img {
+  vertical-align: middle;
+}
+.slideshow-container {
+  max-width: 500px;
+  position: relative;
+  margin: auto;
+}
+.text {
+  color: #f2f2f2;
+  font-size: 40px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+.dot {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: gray;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+  
+.active {
+  background-color: white;
+}
+
+.slide {
+  -webkit-animation-name: slide;
+  -webkit-animation-duration: 1.5s;
+  animation-name: slide;
+  animation-duration: 1.5s;
+}
+  
+@-webkit-keyframes slide {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+  
+@keyframes slide {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+</style>
+<script>
+var slideIndex = 0;
+showSlides();
+    
+function showSlides() {
+  var i;
+  var slides = document.getElementsByClassName("featured");
+  var dots = document.getElementsByClassName("dot");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}    
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+  setTimeout(showSlides, 5000);
+  }
+</script>
