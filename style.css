@@ -86,7 +86,7 @@ b {
 }
 
 .Button {
-    background-color:#0C888A;
+    background-color:#0C8C8D;
     border-radius:8px;
     display:inline-block;
     cursor:pointer;
@@ -96,9 +96,6 @@ b {
     font-weight:bold;
     padding:15px 15px;
     text-decoration:none;
-}
-.Button:hover {
-    background-color:#4795A1;
 }
 .Button:active {
     position:relative;

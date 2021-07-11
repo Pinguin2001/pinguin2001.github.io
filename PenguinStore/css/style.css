@@ -27,8 +27,8 @@ p {
 }
 
 .Button {
-    background-color:#038387;
-    border-radius:6px;
+    background-color:#0C8C8D;
+    border-radius:4px;
     display:inline-block;
     cursor:pointer;
     color:#ffffff;
@@ -37,9 +37,6 @@ p {
     font-weight:bold;
     padding:15px 15px;
     text-decoration:none;
-}
-.Button:hover {
-    background-color:#4fa5b3;
 }
 
 .container {
