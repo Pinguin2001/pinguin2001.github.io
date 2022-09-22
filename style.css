@@ -1,0 +1,150 @@
+body {
+  background-color: black;
+  color: white;
+  font-family: Arial;
+}
+
+.page {
+  display: none;
+}
+
+.Button {
+  background-color:#2f6464;
+  border-radius:5px;
+  display:inline-block;
+  cursor:pointer;
+  color:#ffffff;
+  font-family:Arial;
+  font-size:20px;
+  font-weight:bold;
+  padding:10px 10px;
+  text-decoration:none;
+}
+
+.Nav {
+  background-color: black;
+  color: white;
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  overflow-x: hidden;
+  transition: 0.3s;
+  padding-top: 30px;
+}
+
+.Nav a {
+  cursor: pointer;
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.Nav a:hover {
+  color: #f1f1f1;
+}
+
+.Nav .closebtn {
+  cursor: pointer;
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+#openmenubtn {
+  padding: 10px;
+  cursor: pointer;
+}
+
+
+@media screen and (min-width: 700px) {
+  #openmenubtn { display: none;}
+  .page {
+    margin-left: 250px;
+  }
+  .Nav { border-right: 1px solid #6d6d6e; }
+  .Nav .closebtn {
+    display: none;
+  }
+}
+
+.header {
+  border: 1px solid #868686;
+  display: flex;
+  align-items: center;
+  border-radius: 5px;
+}
+
+.header img {
+  height: 75px;
+  width: 75px;
+}
+
+.profilecard {
+  position: relative;
+  overflow: hidden;
+  margin: 10px;
+  min-width: 230px;
+  max-width: 315px;
+  width: 100%;
+  color: #ffffff;
+  text-align: left;
+  line-height: 1.4em;
+  background-color: #252526;
+  border: 1px solid #868686;
+  border-radius: 5px;
+}
+.profilecard * {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-transition: all 0.25s ease;
+  transition: all 0.25s ease;
+}
+.profilecard img {
+  max-width: 100%;
+  vertical-align: top;
+  opacity: 0.85;
+}
+
+.profilecard figcaption {
+  width: 100%;
+  padding: 25px;
+  position: relative;
+}
+
+.profilecard figcaption a {
+  padding: 5px;
+  border: 1px solid #ffffff;
+  color: #ffffff;
+  font-size: 0.7em;
+  text-transform: uppercase;
+  margin: 10px 0;
+  display: inline-block;
+  opacity: 0.65;
+  width: 47%;
+  text-align: center;
+  text-decoration: none;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+
+.profilecard figcaption a:hover {
+  opacity: 1;
+}
+
+.profilecard .profile {
+  border-radius: 50%;
+  position: absolute;
+  bottom: 100%;
+  left: 0;
+  max-width: 90px;
+  opacity: 1;
+  margin: 20px;
+}
