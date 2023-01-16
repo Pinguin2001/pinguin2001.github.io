@@ -1,151 +1,28 @@
 <!DOCTYPE html>
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Pinguin2001</title>
-    <link href="favicon.ico" rel="shortcut icon" />
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
-</head>
-<body>
-  <p id="openmenubtn" onclick="openNav()">
-    &#9776;
-  </p>
-
-  <div class="Nav">
-    <a class="closebtn" onclick="closeNav()">&times;</a>
-    <a onclick="openPage('Home')">Home</a>
-    <a onclick="openPage('PenguinDeviceTest')">PenguinDeviceTest</a>
-    <a onclick="openPage('PenguinGCam')">PenguinGCam</a>
-    <a onclick="openPage('PenguinStore')">PenguinStore</a>
-    <a onclick="openPage('PenguinToDo')">PenguinTo-Do</a>
-    <a onclick="openPage('QuickSearch')">QuickSearch</a>
-  </div>
-
-  <div id="Home" class="page">
-    <center>
-      <figure class="profilecard">
-        <img src="images/header.jpg" />
-        <figcaption>
-          <img src="images/profilepic.png" class="profile" />
-          <h2>Pinguin2001 <br><br>Android/Windows Phone Enthusiast</h2>
-          <a href="https://t.me/pinguin2001"><span class="fab fa-telegram"></span></a>
-          <a href="https://github.com/Pinguin2001"><span class="fab fa-github"></span></a>
-        </figcaption>
-      </figure>
-    </center>
-  </div>
-  
-  <div id="PenguinDeviceTest" class="page">
-    <div class="header">
-      <img src="images/devicetesticon.png" />
-      <p>PenguinDeviceTest <br> Device test app mainly intended for Lumia phones</p>
-    </div>
-    <a class="Button" href="https://www.dropbox.com/s/qs866veytvdi4d4/DeviceTest_1.0.0.0_x86_x64_arm.appxbundle?dl=1">Download (v1.0)</a>
-    <br><br>
-    <a class="Button" href="https://www.dropbox.com/s/3yiab00ryzvnkbu/DeviceTest_1.0.0.0_x86_x64_arm.cer?dl=1">Download certificate</a>
-    <h2>Features:</h2>
-    <a>
-      - Test your screen for dead pixel/burn-in<br>
-      - Read battery info such as capacity, charge rate and fully-charged energy capacity<br>
-      - Test vibration motor<br>
-      - Test speaker<br>
-      - Test/read sensor data (currently Accelerometer, Barometer, Light sensor and Magnetometer)<br>
-      - Test camera button/usb keyboard
-    </a>
-  </div>
-
-  <div id="PenguinGCam" class="page">
-    <div class="header">
-      <img src="images/gcam.png" />
-      <p>PenguinGCam <br> A stable GCam Mod for Exynos-based Samsung Phones</p>
-    </div>
-    <br>
-    <a class="Button" href="https://forum.xda-developers.com/attachments/penguingcam-v8-0-apk.5590767/">Download (v8.0)</a>
-    <br><br>
-    <a class="Button" href="https://bit.ly/PenguinGCamXDAThread">XDA Thread</a>
-    <h2>Features:</h2>
-    <a>
-      - Shooting Photo and making Video<br>
-      - HDR<br>
-      - PhotoSphere (on One Ui 2.1 or older)<br>
-      - Lens Blur/Portrait Mode<br>
-      - Panorama (on One Ui 2.1 or older)<br>
-      - Timer(3s or 10s)<br>
-      - Custom brightness<br>
-      - Custom white balance<br>
-      - Video stablilization<br>
-      - Dirty lens warning<br>
-      - Volume key actions(Shutter, Zoom)<br>
-      - Double-tap to Zoom<br>
-      - Custom resolution (Photo and Video)<br>
-      - AR Stuff(Add-on)<br>
-    </a>
-
-    <h2>Languages:</h2>
-    <a>
-      - English<br>
-      - French<br>
-      - German<br>
-      - Romanian<br>
-      - Turkish<br>
-    </a>
-
-    <h2>Bugs:</h2>
-    <a>
-      - Panorama and PhotoSphere dont work on One Ui 2.5 or newer<br>
-      - HDR is buggy on some devices<br>
-    </a>
-  </div>
-
-  <div id="PenguinStore" class="page">
-    <div class="header">
-      <img src="images/penguinstorelogo.png" height="75" width="75" />
-      <p>PenguinStore <br> A fast and beautiful app and games store for Windows 10 Mobile</p>
-    </div>
-    <br>
-	<p>Important: Uninstall any other version of PenguinStore first, then install the attached Microsoft App Installer and then PenguinStore</p>
-    <a class="Button" href="https://github.com/Pinguin2001/PenguinStoreUWP/releases/download/v22.12.26/PenguinStore_22.12.26.0_x86_arm.appxbundle">Download (v2.3)</a>
-    <br><br>
-	  <a class="Button" href="https://github.com/Pinguin2001/PenguinStoreUWP/releases/download/v22.12.26/PenguinStore_22.12.26.0_x86_arm.cer">Download Certificate</a>
-    <br><br>
-    <a class="Button" href="https://github.com/Pinguin2001/PenguinStoreUWP/releases/download/v22.12.26/Dependencies.7z">Download dependencies (zip)</a>
-	<br><br>
-	<a class="Button" href="https://github.com/Pinguin2001/PenguinStoreUWP/releases/download/v20.09.22/Microsoft.App.Installer.v2019.1019.1.0.appxbundle">Download Microsoft App Installer (required to install apps)</a>
-	<h2>Features:</h2>
-    <a>
-      - Download apps and games<br>
-      - Search for apps and games<br>
-      - Instant games (play games without installing them)<br>
-    </a>
-  </div>
-
-  <div id="PenguinToDo" class="page">
-    <div class="header">
-      <img src="images/penguintodoicon.png" />
-      <p>Penguin To-Do <br> A simple and fast To-Do app for Windows 10, Windows 10 Mobile and Windows 11</p>
-    </div>
-    <br>
-    <a class="Button" href="https://github.com/Pinguin2001/Penguin-ToDo/releases/download/v2.0/PenguinTo-Do_2.0.0.0_x86_x64_arm.appxbundle">Download (v2.0)</a>
-    <br><br>
-	  <a class="Button" href="https://github.com/Pinguin2001/Penguin-ToDo/releases/download/v2.0/PenguinTo-Do_2.0.0.0_x86_x64_arm.cer">Download Certificate</a>
-    <br><br>
-    <a class="Button" href="https://github.com/Pinguin2001/Penguin-ToDo/blob/main/README.md">Installation Instructions</a>
-  </div>
-
-  <div id="QuickSearch" class="page">
-    <div class="header">
-      <img src="images/quicksearchicon.png" />
-      <p>QuickSearch <br> A small and simple web search app for Windows 10 Mobile</p>
-    </div>
-    <br>
-    <a class="Button" href="https://www.dropbox.com/s/9v5wlfm118sbdx8/Quick%20Search_2.0.0.0_arm.appxbundle?dl=1">Download (v2.0)</a>
-    <br><br>
-    <a class="Button" href="https://www.dropbox.com/s/axuyuyyyi4i35js/Quick%20Search_2.0.0.0_arm.cer?dl=1">Download certificate</a>
-    <br><br>
-    <a class="Button" href="https://www.dropbox.com/s/fd4bplvgn6ef1dj/Dependencies.zip?dl=1">Download Dependencies</a>
-  </div>
-  
-  <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
-  <script src="js/script.js"></script>
-</body>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="style.css">
+        <link href="favicon.ico" rel="shortcut icon" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+        <title>Pinguin2001</title>
+    </head>
+    <body>
+        <p id="openmenubtn" onclick="openNav()">
+            &#9776;
+        </p>
+        <div class="Nav">
+            <a class="closebtn" onclick="closeNav()">&times;</a>
+            <a onclick="openPage('Home')">Home</a>
+            <a onclick="openPage('PenguinDeviceTest')">PenguinDeviceTest</a>
+            <a onclick="openPage('PenguinGCam')">PenguinGCam</a>
+            <a onclick="openPage('PenguinStore')">PenguinStore</a>
+            <a onclick="openPage('PenguinToDo')">PenguinTo-Do</a>
+            <a onclick="openPage('QuickSearch')">QuickSearch</a>
+        </div>
+        <div id="page" class="page"></div>
+        <script src="https://code.jquery.com/jquery-3.6.3.min.js"></script>
+        <script src="script.js"></script>
+    </body>
+</html>

@@ -1,15 +1,11 @@
 body {
-  background-color: black;
+  background-color: #282828;
   color: white;
   font-family: Arial;
 }
 
-.page {
-  display: none;
-}
-
 .Button {
-  background-color:#2f6464;
+  background-color:#3b76ad;
   border-radius:5px;
   display:inline-block;
   cursor:pointer;
@@ -22,7 +18,7 @@ body {
 }
 
 .Nav {
-  background-color: black;
+  background-color: #282828;
   color: white;
   height: 100%;
   width: 0;
