@@ -34,15 +34,12 @@ function closeNav() {
 }
 
 function openPage(pageName) {
-  var page;
+  var i, page;
   page = $(".page");
-  for (i = 0; i < page.length; i++) {
-    $(page[i]).hide();
-  }
   if ($(window).width() < 700) {
     closeNav();
   }
-  $("#" + pageName).show();
+  $("#page").load("pages/" + pageName + ".html"); 
 }
 
 function getPageString(String) {

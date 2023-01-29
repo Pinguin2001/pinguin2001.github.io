@@ -1,0 +1,35 @@
+body {
+    background-image: url("../images/mica.png");
+}
+
+.fluent-Button {
+    background-color:#62cdfe;
+    border-radius:5px;
+    display:inline-block;
+    cursor: default;
+    color:black;
+    font-size:13px;
+    padding: 7px;
+    text-decoration: none;
+}
+
+.fluent-Button:hover {
+    background-color: #47b1e8;
+}
+
+.fluent-Button:active {
+    background-color: #42a1d2;
+    color: #245874;
+}
+
+.fluent-HyperlinkButton {
+    color: #9aecfe;
+    cursor: pointer;
+    padding: 7px;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+.fluent-HyperlinkButton:hover {
+    background-color: hsla(0, 0%, 100%, 6.05%);
+}
