@@ -4,7 +4,8 @@ body {
 }
 
 .Nav {
-  background-image: url("images/mica.png");
+  background-color: rgba(0, 0, 0, 0.4);
+  backdrop-filter: blur(20px);
   height: 100%;
   position: fixed;
   z-index: 1;
@@ -45,11 +46,18 @@ body {
 
 
 @media screen and (min-width: 700px) {
-  #openmenubtn { display: none;}
+  #openmenubtn {
+    display: none;
+  }
+
   .page {
     margin-left: 250px;
   }
-  .Nav { border-right: 1px solid #6d6d6e; }
+
+  .Nav {
+    border-right: 1px solid #6d6d6e;
+  }
+
   .Nav .closebtn {
     display: none;
   }
@@ -62,11 +70,7 @@ body {
   border-radius: 5px;
 }
 
-.header img {
-  height: 75px;
-  width: 75px;
-}
-
+/* Home page */
 .profilecard {
   position: relative;
   overflow: hidden;
@@ -77,16 +81,17 @@ body {
   color: #ffffff;
   text-align: left;
   line-height: 1.4em;
-  background-color: #252526;
   border: 1px solid #868686;
-  border-radius: 5px;
 }
+
 .profilecard * {
   -webkit-box-sizing: border-box;
+  border-radius: 10px;
   box-sizing: border-box;
   -webkit-transition: all 0.25s ease;
   transition: all 0.25s ease;
 }
+
 .profilecard img {
   max-width: 100%;
   vertical-align: top;
@@ -127,4 +132,11 @@ body {
   max-width: 90px;
   opacity: 1;
   margin: 20px;
+}
+
+/* Bluebird page */
+.bluebird-Header {
+  content: url("../images/bluebird-header.png");
+  content: url("../images/bluebird-header.webp");
+  content: url("../images/bluebird-header.avif");
 }

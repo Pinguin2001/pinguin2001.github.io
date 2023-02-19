@@ -1,14 +1,17 @@
 body {
+    /* The browser will automatically choose the best image format */
     background-image: url("../images/mica.png");
+    background-image: url("../images/mica.webp");
+    background-image: url("../images/mica.avif");
 }
 
 .fluent-Button {
-    background-color:#62cdfe;
-    border-radius:5px;
-    display:inline-block;
+    background-color: #62cdfe;
+    border-radius: 5px;
+    display: inline-block;
     cursor: default;
-    color:black;
-    font-size:13px;
+    color: black;
+    font-size: 13px;
     padding: 7px;
     text-decoration: none;
 }

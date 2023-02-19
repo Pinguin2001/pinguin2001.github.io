@@ -1,8 +1,7 @@
-$(document).ready(function() {
+$(document).ready(function () {
   /* If navigate= argument is present in the url, navigate to that page */
   var pageName = getPageString("navigate");
-  if (pageName !== null)
-  {
+  if (pageName !== null) {
     openPage(pageName);
   }
   else {
@@ -12,7 +11,7 @@ $(document).ready(function() {
   opencloseNav();
 });
 
-$(window).resize(function() {
+$(window).resize(function () {
   opencloseNav();
 });
 
@@ -39,7 +38,7 @@ function openPage(pageName) {
   if ($(window).width() < 700) {
     closeNav();
   }
-  $("#page").load("pages/" + pageName + ".html"); 
+  $("#page").load("pages/" + pageName + ".html");
 }
 
 function getPageString(String) {
