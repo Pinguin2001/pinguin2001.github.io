@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PenguinStore redirect</title>
+</head>
+<body>
+    <a>PenguinStore redirect page, you should be automatically redirected to the app</a>
+    <script>
+        var appid = getPageString("app");
+        if (appid !== null) {
+            window.location.href = "penguinstore-app:" + appid;
+        }
+        else {
+            alert("Invalid data");
+        }
+        function getPageString(String) {
+            return decodeURI((new RegExp("[?]" + String + "=" + "([^&]+?)($)").exec(location.search) || [null, ""])[1].replace(/\+/g, "%20")) || null;
+        }
+    </script>
+</body>
+</html>
