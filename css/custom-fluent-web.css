@@ -1,8 +1,12 @@
 body {
     /* The browser will automatically choose the best image format */
     background-image: url("../images/mica.png");
+
+    /*
+    Temporarly disabled due to reported issues with safari and edge
     background-image: url("../images/mica.webp");
     background-image: url("../images/mica.avif");
+    */
 }
 
 .fluent-Button {
