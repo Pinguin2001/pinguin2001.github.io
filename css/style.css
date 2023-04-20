@@ -137,6 +137,9 @@ body {
 /* Bluebird page */
 .bluebird-Header {
   content: url("../images/bluebird-header.png");
+  /*
+  Temporarly disabled due to reported issues with safari and edge
   content: url("../images/bluebird-header.webp");
   content: url("../images/bluebird-header.avif");
+  */
 }
