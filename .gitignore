@@ -1,0 +1,2 @@
+## Ignore non compressed javascript files
+*.dev.js
