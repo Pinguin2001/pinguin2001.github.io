@@ -1,12 +1,15 @@
-body {
-    /* The browser will automatically choose the best image format */
-    background-image: url("../images/mica.png");
+@media (prefers-color-scheme: light) {
+    body {
+        background-color: #f3f3f3;
+        color: black;
+    }
+}
 
-    /*
-    Temporarly disabled due to reported issues with safari and edge
-    background-image: url("../images/mica.webp");
-    background-image: url("../images/mica.avif");
-    */
+@media (prefers-color-scheme: dark) {
+    body {
+        background-color: #202020;
+        color: white;
+    }
 }
 
 .fluent-Button {

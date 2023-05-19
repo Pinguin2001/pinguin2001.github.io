@@ -4,8 +4,7 @@ body {
 }
 
 .Nav {
-  background-color: rgba(0, 0, 0, 0.4);
-  backdrop-filter: blur(20px);
+  backdrop-filter: blur(40px);
   height: 100%;
   position: fixed;
   z-index: 1;
@@ -21,13 +20,7 @@ body {
   padding: 8px 8px 8px 32px;
   text-decoration: none;
   font-size: 16px;
-  color: rgba(255, 255, 255, 0.511);
   display: block;
-  transition: 0.3s;
-}
-
-.Nav a:hover {
-  color: #f1f1f1;
 }
 
 .Nav .closebtn {
@@ -56,6 +49,7 @@ body {
 
   .Nav {
     border-right: 1px solid #6d6d6e;
+    backdrop-filter: none;
   }
 
   .Nav .closebtn {
@@ -78,21 +72,22 @@ body {
   min-width: 230px;
   max-width: 315px;
   width: 100%;
-  color: #ffffff;
   text-align: left;
   line-height: 1.4em;
   border: 1px solid #868686;
+  border-radius: 10px;
 }
 
 .profilecard * {
   -webkit-box-sizing: border-box;
-  border-radius: 10px;
   box-sizing: border-box;
   -webkit-transition: all 0.25s ease;
   transition: all 0.25s ease;
 }
 
 .profilecard img {
+  border-bottom: 1px solid #868686;
+  border-radius: 6px;
   max-width: 100%;
   vertical-align: top;
   opacity: 0.85;
@@ -105,12 +100,13 @@ body {
 }
 
 .profilecard figcaption a {
+  border: 1px solid #868686;
+  border-radius: 6px;
   padding: 5px;
-  border: 1px solid #ffffff;
-  color: #ffffff;
   font-size: 0.7em;
   text-transform: uppercase;
   margin: 10px 0;
+  color: #62cdfe;
   display: inline-block;
   opacity: 0.65;
   width: 47%;
