@@ -1,3 +1,12 @@
+body {
+    background-color: #f3f3f3;
+    color: black;
+}
+
+.SVSettingsBlockElement {
+    background-color: #fbfbfb;
+}
+
 @media (prefers-color-scheme: light) {
     body {
         background-color: #f3f3f3;
@@ -10,6 +19,29 @@
         background-color: #202020;
         color: white;
     }
+
+    .SVSettingsBlockElement {
+        background-color: #2d2d2d;
+    }
+}
+
+.SVSettingsBlockElement {
+    border: 1px solid #868686;
+    padding: 8px;
+    margin-top: 7px;
+    display: flex;
+    align-items: center;
+    border-radius: 5px;
+    transition: border-color 200ms ease-out;
+    cursor: default;
+}
+
+.SVSettingsBlockElement:hover {
+    border-color: #62cdfe;
+}
+
+.SVSettingsBlockElement img {
+    margin-right: 5px;
 }
 
 .fluent-Button {
@@ -21,6 +53,10 @@
     font-size: 13px;
     padding: 7px;
     text-decoration: none;
+}
+
+.fluent-Button:link {
+    color: black;
 }
 
 .fluent-Button:hover {
@@ -42,4 +78,38 @@
 
 .fluent-HyperlinkButton:hover {
     background-color: hsla(0, 0%, 100%, 6.05%);
+}
+
+a:link {
+    font-style: normal;
+    color: #245874;
+}
+
+a:visited {
+    color: #245874;
+}
+
+.card {
+    width: 150px;
+    border: 2px solid #2d2d2d;
+    border-radius: 5px;
+    margin: 3px;
+}
+
+.cardcontent {
+    margin: 10px;
+}
+
+.cards-container {
+    display: flex;
+    flex-direction: row;
+}
+
+@media (max-width: 800px) {
+    .cards-container {
+      flex-direction: column;
+    }
+    .card {
+        width: 100%;
+    }
 }

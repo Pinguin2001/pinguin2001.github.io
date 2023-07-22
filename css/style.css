@@ -3,139 +3,16 @@ body {
   font-family: 'Segoe UI', Arial;
 }
 
-.Nav {
-  backdrop-filter: blur(40px);
-  height: 100%;
-  position: fixed;
-  z-index: 1;
-  top: 0;
-  left: 0;
-  overflow-x: hidden;
-  transition: 0.3s;
-  padding-top: 30px;
-}
-
-.Nav a {
-  cursor: pointer;
-  padding: 8px 8px 8px 32px;
-  text-decoration: none;
-  font-size: 16px;
-  display: block;
-}
-
-.Nav .closebtn {
-  cursor: pointer;
-  position: absolute;
-  top: 0;
-  right: 25px;
-  font-size: 36px;
-  margin-left: 50px;
-}
-
-#openmenubtn {
-  padding: 10px;
-  cursor: pointer;
-}
-
-
-@media screen and (min-width: 700px) {
-  #openmenubtn {
-    display: none;
-  }
-
-  .page {
-    margin-left: 250px;
-  }
-
-  .Nav {
-    border-right: 1px solid #6d6d6e;
-    backdrop-filter: none;
-  }
-
-  .Nav .closebtn {
-    display: none;
-  }
-}
-
-.header {
-  border: 1px solid #868686;
-  display: flex;
-  align-items: center;
-  border-radius: 5px;
-}
-
-/* Home page */
-.profilecard {
-  position: relative;
-  overflow: hidden;
-  margin: 10px;
-  min-width: 230px;
-  max-width: 315px;
-  width: 100%;
-  text-align: left;
-  line-height: 1.4em;
-  border: 1px solid #868686;
-  border-radius: 10px;
-}
-
-.profilecard * {
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box;
-  -webkit-transition: all 0.25s ease;
-  transition: all 0.25s ease;
-}
-
-.profilecard img {
-  border-bottom: 1px solid #868686;
-  border-radius: 6px;
-  max-width: 100%;
-  vertical-align: top;
-  opacity: 0.85;
-}
-
-.profilecard figcaption {
-  width: 100%;
-  padding: 25px;
-  position: relative;
-}
-
-.profilecard figcaption a {
-  border: 1px solid #868686;
-  border-radius: 6px;
-  padding: 5px;
-  font-size: 0.7em;
-  text-transform: uppercase;
-  margin: 10px 0;
-  color: #62cdfe;
-  display: inline-block;
-  opacity: 0.65;
-  width: 47%;
-  text-align: center;
-  text-decoration: none;
-  font-weight: 600;
-  letter-spacing: 1px;
-}
-
-.profilecard figcaption a:hover {
-  opacity: 1;
-}
-
-.profilecard .profile {
+.profilepic {
   border-radius: 50%;
-  position: absolute;
-  bottom: 100%;
-  left: 0;
-  max-width: 90px;
-  opacity: 1;
-  margin: 20px;
+  width: 75px;
+  height: 75px;
 }
 
-/* Bluebird page */
-.bluebird-Header {
-  content: url("../images/bluebird-header.png");
-  /*
-  Temporarly disabled due to reported issues with safari and edge
-  content: url("../images/bluebird-header.webp");
-  content: url("../images/bluebird-header.avif");
-  */
+.footer{ 
+  position: fixed;     
+  text-align: center;    
+  bottom: 0px; 
+  width: 100%;
+  margin-bottom: 20px;
 }
