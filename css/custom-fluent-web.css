@@ -12,6 +12,16 @@ body {
         background-color: #f3f3f3;
         color: black;
     }
+
+    a:link {
+        font-style: normal;
+        color: #245874;
+    }
+    
+    a:visited {
+        color: #245874;
+    }
+    
 }
 
 @media (prefers-color-scheme: dark) {
@@ -23,6 +33,16 @@ body {
     .SVSettingsBlockElement {
         background-color: #2d2d2d;
     }
+
+    a:link {
+        font-style: normal;
+        color: #9cdcfe;
+    }
+    
+    a:visited {
+        color: #9cdcfe;
+    }
+    
 }
 
 .SVSettingsBlockElement {
@@ -69,7 +89,6 @@ body {
 }
 
 .fluent-HyperlinkButton {
-    color: #9aecfe;
     cursor: pointer;
     padding: 7px;
     border-radius: 5px;
@@ -78,15 +97,6 @@ body {
 
 .fluent-HyperlinkButton:hover {
     background-color: hsla(0, 0%, 100%, 6.05%);
-}
-
-a:link {
-    font-style: normal;
-    color: #245874;
-}
-
-a:visited {
-    color: #245874;
 }
 
 .card {
